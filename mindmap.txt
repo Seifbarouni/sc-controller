@@ -1,0 +1,17 @@
+* Process:
+- name : string                 [required]
+- path : string                 [required] 
+- autorestart : bool            [optional(default=true)]
+- autostart : bool              [optional(default=true)]
+- working directory : string    [optional(default=".")]
+- stderr_logfile : string       [optional(default="/var/log/<name>.err.log")]
+- stdout_logfile : string       [optional(default="/var/log/<name>.out.log")]
+
+* Program should run as a daemon
+* Program should read config from a specific file (example: /etc/sc-controller/conf.d/x.yaml)
+* Program should offer some commands like:
+  - validate config
+  - reread config
+  - start,stop,restart process
+  - get process pid
+  - get status of a process
