@@ -8,7 +8,7 @@
 - stdout_logfile : string       [optional(default="/var/log/<name>.out.log")]
 
 * Program should run as a daemon
-* Program should read config from a specific file (example: /etc/sc-controller/conf.d/x.yaml)
+* Program should read config from a specific file (example: /etc/sc-controller/conf.d/x.toml)
 * Program should offer some commands like:
   - validate config
   - reread config
