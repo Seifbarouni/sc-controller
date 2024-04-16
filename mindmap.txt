@@ -1,3 +1,5 @@
+* Global Settings
++
 * Process:
 - name : string                 [required]
 - path : string                 [required] 
@@ -7,8 +9,23 @@
 - stderr_logfile : string       [optional(default="/var/log/<name>.err.log")]
 - stdout_logfile : string       [optional(default="/var/log/<name>.out.log")]
 
+typr Process struct {
+  name
+  processId
+  path
+  status
+  autorestart
+  autostart
+  workingDirectory
+  stderrLogfile
+  stdoutLogfile
+}
+
 * Program should run as a daemon
-* Program should read config from a specific file (example: /etc/sc-controller/conf.d/x.toml)
+* Program should read config from a specific file (example: /etc/sc-controller/conf.yml)
+* Program should use sqlite to store status of processes
+* Program should check if process stopped every 3 seconds 
+* Program should log every process log in a specific file (log + err)
 * Program should offer some commands like:
   - validate config
   - reread config
