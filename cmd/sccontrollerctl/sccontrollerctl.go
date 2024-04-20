@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Seifbarouni/sc-controller/cmd/pkg/data"
-	"github.com/Seifbarouni/sc-controller/cmd/validators"
+	"github.com/Seifbarouni/sc-controller/pkg/data"
+	"github.com/Seifbarouni/sc-controller/pkg/validators"
 )
 
 var (
