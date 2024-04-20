@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/Seifbarouni/sc-controller/cmd/data"
 	"github.com/Seifbarouni/sc-controller/cmd/validators"
 )
 
@@ -24,6 +25,10 @@ var (
 )
 
 func main() {
+	_, err := data.Init()
+	if err != nil {
+		log.Fatal(cRed + err.Error())
+	}
 	yaml := validators.Init()
 	c, err := yaml.Validate()
 	if err != nil {
