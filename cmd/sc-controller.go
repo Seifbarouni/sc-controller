@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Seifbarouni/sc-controller/cmd/data"
+	"github.com/Seifbarouni/sc-controller/cmd/pkg/data"
 	"github.com/Seifbarouni/sc-controller/cmd/validators"
 )
 
