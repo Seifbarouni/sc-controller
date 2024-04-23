@@ -17,6 +17,7 @@ type Process struct {
 	Id               int
 	Name             string `yaml:"name"`
 	Path             string `yaml:"path"`
+	Status           string
 	WorkingDirectory string `yaml:"working_directory"`
 	AutoStart        bool   `yaml:"auto_start"`
 	AutoRestart      bool   `yaml:"auto_restart"`
